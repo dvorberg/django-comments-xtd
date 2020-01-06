@@ -556,6 +556,7 @@ Enabling the comment removal flag is about including the **allow_flagging** argu
          {% render_xtdcomment_tree for object allow_flagging %}
        </ul>
 
+**NOTE**: For this to work in the browser, `Font Awesome <https://fontawesome.com>`_ CSS Styles and resources are required. Download the free sample or use their free CDN service and add a ``<link rel="stylesheet">`` to ``base.html``.
 
 The **allow_flagging** argument makes the templatetag populate a variable ``allow_flagging = True`` in the context in which ``django_comments_xtd/comment_tree.html`` is rendered. Edit now the settings module and enable the ``allow_flagging`` option for the ``blog.post``:
 
